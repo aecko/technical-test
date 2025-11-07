@@ -12,3 +12,5 @@ const mockOpenAi = (userInput, prompt) => {
     }, 2000);
   });
 };
+
+module.exports = mockOpenAi;

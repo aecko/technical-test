@@ -2,9 +2,9 @@
 
 import axios from "axios";
 
-const llmRequest = async (userInput) => {
+const llmRequest = async (userMessage) => {
   const payload = {
-    userInput,
+    userMessage,
   };
   const res = await axios.post("/api/llmRequest", payload);
   return res.data;
